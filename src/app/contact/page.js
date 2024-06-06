@@ -3,12 +3,10 @@ import React from "react";
 import { useState } from "react";
 
 export default function DynamicContactComponent() {
-  // Ensure useState calls are unconditional
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [successMessage, setSuccessMessage] = useState('');
 
   const handleChange = (e) => {
-    // Use functional updates to ensure the latest state is used
     setFormData(prevFormData => ({ ...prevFormData, [e.target.name]: e.target.value }));
   };
 

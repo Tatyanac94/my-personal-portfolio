@@ -1,5 +1,5 @@
 import React from "react";
-import { useClient } from 'next/client'; // Import the useClient hook
+import { useClient } from 'next/client';
 import dynamic from 'next/dynamic';
 
 const DynamicContactComponent = dynamic(() => import('../app/contact/page'), {
@@ -7,7 +7,7 @@ const DynamicContactComponent = dynamic(() => import('../app/contact/page'), {
 });
 
 export default function ContactPage() {
-  useClient(); // Use the useClient hook to mark this component as a Client Component
+  useClient(); 
 
   return (
     <div p-5 m-5 border border-black rounded-md bg-emerald-500>
