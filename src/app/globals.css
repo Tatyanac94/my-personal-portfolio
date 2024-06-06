@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +31,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.black-text {
+  color: black;
 }
